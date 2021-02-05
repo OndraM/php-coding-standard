@@ -16,6 +16,7 @@ jobs:
         dependencies: ['']
         include:
           - { php-version: '7.3', dependencies: '--prefer-lowest --prefer-stable' }
+          - { php-version: '8.0', dependencies: '--ignore-platform-req=php' }
 
     name: PHP ${{ matrix.php-version }} ${{ matrix.dependencies }}
 
